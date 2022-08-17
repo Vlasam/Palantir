@@ -1,31 +1,25 @@
-﻿// Дано число обозначающее день недели. Выяснить является номер дня недели выходным
-Console.WriteLine ("Ведите целое число дня недели до 7: ");
+﻿// По двум заданным числам проверять является ли одно квадратом другого
+Console.WriteLine ("Ведите первое число: ");
 int x = int.Parse (Console.ReadLine());
-if (x == 1)
+Console.WriteLine ("Ведите второе число: ");
+int y = int.Parse (Console.ReadLine());
+if (y * y == x )
 {
-    Console.WriteLine("Рабочий день недели понедельник");
+    Console.WriteLine ("Первое число квадрат второго");
 }
-else if (x > 1 && x < 3)
+else if (x * x == y )
 {
-    Console.WriteLine("Рабочий день недели вторник");
+    Console.WriteLine ("Второе число квадрат первого");
 }
-else if (x > 2 && x < 4)
+else if (x == y)
 {
-    Console.WriteLine("Рабочий день недели среда");
+    Console.WriteLine ("Условие не выполняется");
 }
-else if (x > 3 && x < 5)
+else if ( x * x > y )
 {
-    Console.WriteLine("Рабочий день недели четверг");
+    Console.WriteLine ("Условие не выполняется");
 }
-else if (x > 4 && x < 6)
+else if ( y * y > x)
 {
-    Console.WriteLine("Рабочий день недели пятница");
-}
-else if (x > 5 && x < 7)
-{
-    Console.WriteLine("Выходной день недели суббота");
-}
-else if (x == 7)
-{
-    Console.WriteLine("Выходной день недели воскресение");
+    Console.WriteLine ("Услвие не выполняется");
 }
